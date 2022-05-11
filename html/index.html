@@ -1,12 +1,264 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Testing</h1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <title>Pokemon Quiz</title>
+  </head>
+  <body>
+    <!-- top section-->
+    <div class="intro py-3 bg-white text-center">
+      <div class="containter">
+        <h2 class="text-primary display-3 my-4">Pokemon Quiz</h2>
+      </div>
+    </div>
+
+    <!-- result section -->
+    <div class="result py-4 d-none bg-light text-center">
+        <div class="containter lead">
+            <p>You scored a <span class="text-primary display-4 p-3">0%</span></p>
+        </div>
+    </div>
+
+    <!-- quiz section -->
+    <div class="quiz py-4 bg-primary">
+      <div class="container">
+        <h2 class="my-5 text-white">On with the questions...</h2>
+
+        <form class="quiz-form text-light">
+            <div class="my-5">
+                <p class="lead font-weight-normal">
+                    1. What Pokemon does Raichu evolve from?
+                </p>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q1" value="A" checked>
+                    <label class="form-check-label">Pichu</label>
+                </div>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q1" value="B">
+                    <label class="form-check-label">Pikachu</label>
+                </div>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q1" value="C">
+                    <label class="form-check-label">Jigglypuff</label>
+                </div>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q1" value="D">
+                    <label class="form-check-label">Eevee</label>
+                </div>
+            </div>
+
+            <div class="my-5">
+                <p class="lead font-weight-normal">
+                    2. Which of the following is the fairy-type evolution of Eevee?
+                </p>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q2" value="A" checked>
+                    <label class="form-check-label">Flareon</label>
+                </div>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q2" value="B">
+                    <label class="form-check-label">Vaporeon</label>
+                </div>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q2" value="C">
+                    <label class="form-check-label">Sylveon</label>
+                </div>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q2" value="D">
+                    <label class="form-check-label">Espeon</label>
+                </div>
+            </div>
+
+            <div class="my-5">
+                <p class="lead font-weight-normal">
+                    3. What typing does Lugia have?
+                </p>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q3" value="A" checked>
+                    <label class="form-check-label">Water/Psychic</label>
+                </div>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q3" value="B">
+                    <label class="form-check-label">Flying/Water</label>
+                </div>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q3" value="C">
+                    <label class="form-check-label">Psychic/Flying</label>
+                </div>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q3" value="D">
+                    <label class="form-check-label">Water/Steel</label>
+                </div>
+            </div>
+
+            <div class="my-5">
+                <p class="lead font-weight-normal">
+                    4. The games "Pokemon X" and "Pokemon Y" are based on what country?
+                </p>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q4" value="A" checked>
+                    <label class="form-check-label">America</label>
+                </div>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q4" value="B">
+                    <label class="form-check-label">Japan</label>
+                </div>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q4" value="C">
+                    <label class="form-check-label">England</label>
+                </div>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q4" value="D">
+                    <label class="form-check-label">France</label>
+                </div>
+            </div>
+
+            <div class="my-5">
+                <p class="lead font-weight-normal">
+                    5. The phrase "All lives touch other lives to create something anew and alive" originates in which games?
+                </p>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q5" value="A" checked>
+                    <label class="form-check-label">Pokemon Diamond and Pearl</label>
+                </div>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q5" value="B">
+                    <label class="form-check-label">Pokemon Sun and Moon</label>
+                </div>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q5" value="C">
+                    <label class="form-check-label">Pokemon Red and Blue</label>
+                </div>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q5" value="D">
+                    <label class="form-check-label">Pokemon Ruby and Sapphire</label>
+                </div>
+            </div>
+
+            <div class="my-5">
+                <p class="lead font-weight-normal">
+                    6. In the beginning of the TV show, Jessie and James first had which Pokemon?
+                </p>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q6" value="A" checked>
+                    <label class="form-check-label">Seviper and Cacnea</label>
+                </div>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q6" value="B">
+                    <label class="form-check-label">Pumpkaboo and Inkay</label>
+                </div>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q6" value="C">
+                    <label class="form-check-label">Woobat and Yamask</label>
+                </div>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q6" value="D">
+                    <label class="form-check-label">Ekans and Koffing</label>
+                </div>
+            </div>
+
+            <div class="my-5">
+                <p class="lead font-weight-normal">
+                    7. Dragon types are weak to which type?
+                </p>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q7" value="A" checked>
+                    <label class="form-check-label">Dragon</label>
+                </div>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q7" value="B">
+                    <label class="form-check-label">Dark</label>
+                </div>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q7" value="C">
+                    <label class="form-check-label">Electric</label>
+                </div>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q7" value="D">
+                    <label class="form-check-label">Steel</label>
+                </div>
+            </div>
+
+            <div class="my-5">
+                <p class="lead font-weight-normal">
+                    8. What Pokemon is known as "the balloon Pokemon?"
+                </p>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q8" value="A" checked>
+                    <label class="form-check-label">Lickitung</label>
+                </div>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q8" value="B">
+                    <label class="form-check-label">Voltorb</label>
+                </div>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q8" value="C">
+                    <label class="form-check-label">Jigglypuff</label>
+                </div>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q8" value="D">
+                    <label class="form-check-label">Meowth</label>
+                </div>
+            </div>
+
+            <div class="my-5">
+                <p class="lead font-weight-normal">
+                    9. Which Pokemon is Pokemon ID number 1 in the Regional Pokedex in the games "Pokemon Black" and "Pokemon White?"
+                </p>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q9" value="A" checked>
+                    <label class="form-check-label">Snivy</label>
+                </div>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q9" value="B">
+                    <label class="form-check-label">Victini</label>
+                </div>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q9" value="C">
+                    <label class="form-check-label">Jirachi</label>
+                </div>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q9" value="D">
+                    <label class="form-check-label">Tepig</label>
+                </div>
+            </div>
+
+            <div class="my-5">
+                <p class="lead font-weight-normal">
+                    10. What move does Empoleon learn upon evolution?
+                </p>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q10" value="A" checked>
+                    <label class="form-check-label">Scald</label>
+                </div>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q10" value="B">
+                    <label class="form-check-label">Metal Claw</label>
+                </div>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q10" value="C">
+                    <label class="form-check-label">Hydro Pump</label>
+                </div>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q10" value="D">
+                    <label class="form-check-label">Aqua Jet</label>
+                </div>
+            </div>
+            <div class="text-center">
+                <input type="submit" class="btn btn-light">
+            </div>
+        </form>
+      </div>
+    </div>
+
+    <script src="/javascript/index.js"></script>
+  </body>
 </html>
